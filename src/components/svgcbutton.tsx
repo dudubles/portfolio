@@ -1,21 +1,22 @@
 "use client";
 
-import type { Metadata } from "next";
-import { useState } from 'react';
+import React, { CSSProperties } from 'react';
 
-function SvgCButton({ url, svgelement }: { url: string; svgelement: React.ReactNode }) {
+function SvgCButton({
+  style,
+  url,
+  svgelement,
+}: Readonly<{
+  style: CSSProperties;
+  url: string;
+  svgelement: React.ReactNode;
+}>) {
   const handleClick = () => {
     window.open(url, "_blank");
   };
 
   return (
-    <button
-      style={{
-        width: "32px",
-        height: "32px",
-        background: "none",
-        margin: "6px 10px"
-      }}
+    <button style={style}
       onClick={handleClick}
     >
       {svgelement}

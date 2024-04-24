@@ -107,11 +107,10 @@ export default function Home() {
         <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "darkcyan" }}>Social Media</h3>
         <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "48px", display: "flex" }}>
           <div style={{ height: "48px", margin: "auto", display: "flex" }}>
-            <SvgCButton url="https://github.com/dudubles" svgelement=<CibGithub className="defsvg" /> className="svg-btn" style={{ width: "32px", height: "32px", background: "none", margin: "6px 10px" }}>
-            </SvgCButton>
 
-            <SvgCButton url="https://gitlab.com/dudubles" svgelement=<CibGitlab className="defsvg" /> className="svg-btn" style={{ width: "32px", height: "32px", background: "none", margin: "6px 10px" }}>
-            </SvgCButton>
+            <SvgCButton url="https://github.com/dudubles" svgelement=< CibGithub className="defsvg" /> style={{ width: "32px", height: "32px", background: "none", margin: "6px 10px" }} />
+
+            <SvgCButton url="https://gitlab.com/dudubles" svgelement=<CibGitlab className="defsvg" /> style={{ width: "32px", height: "32px", background: "none", margin: "6px 10px" }} />
 
             <HoverCard openDelay={100} closeDelay={0}>
               <HoverCardTrigger style={{ width: "32px", height: "32px", margin: "6px 10px" }} ><CibDiscord className="defsvg" /></HoverCardTrigger>
