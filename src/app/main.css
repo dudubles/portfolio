@@ -3,6 +3,10 @@ body {
   place-items: center;
   min-height: 100vh;
   background-color: #060606;
+  background-image: url("../../public/pexels-photo-14756679.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(4px);
 }
 
 .card-style {

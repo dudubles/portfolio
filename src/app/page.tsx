@@ -33,13 +33,9 @@ import CibGithub from "@/icons/CibGithub";
 import CibGitlab from "@/icons/CibGitlab";
 import CibDiscord from "@/icons/CibDiscord";
 
-import CircleFlagsCl from "@/icons/CircleFlagsCl";
-import GameIconsSoccerBall from "@/icons/GameIconsSoccerBall";
-import HeroiconsSolidHeart from "@/icons/HeroiconsSolidHeart";
-
 export default function Home() {
   return (
-    <Card className="card-style" style={{ width: "75%", height: "95%", minWidth: "350px", maxWidth: "800px", minHeight: "860px" }}>
+    <Card className="card-style" style={{ width: "75%", minWidth: "350px", maxWidth: "615px", minHeight: "825px", maxHeight: "825px" }}>
       <CardHeader style={{ height: "80px" }}>
         <CardTitle>Duduble&apos;s Portfolio</CardTitle>
         <CardDescription>Self-Taught Developer / Engineer</CardDescription>
@@ -47,7 +43,7 @@ export default function Home() {
 
       <CardContent>
 
-        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "blueviolet" }}>Languages I regularly use.</h3>
+        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "blueviolet" }}>Skills</h3>
         <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "48px", display: "flex" }}>
           <div style={{ height: "48px", margin: "auto", display: "flex" }}>
             <CibLua className="defsvg" style={{ width: "32px", height: "32px", background: "none", margin: "6px 10px" }} />
@@ -57,7 +53,7 @@ export default function Home() {
           </div>
         </Card>
 
-        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "brown" }}>Software I use.</h3>
+        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "brown" }}>Software</h3>
         <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "48px", display: "flex" }}>
           <div style={{ height: "48px", margin: "auto", display: "flex" }}>
 
@@ -122,28 +118,28 @@ export default function Home() {
           </div>
         </Card>
 
-        <Tabs defaultValue="aboutme" style={{ height: "450px", marginTop: "10px" }}>
+        <Tabs defaultValue="projects" style={{ height: "450px", marginTop: "10px" }}>
           <TabsList style={{ backgroundColor: "#1a1a1a", color: "white" }}>
-            <TabsTrigger value="aboutme">About Me</TabsTrigger>
-            <TabsTrigger value="contact">Contact Info</TabsTrigger>
+            <TabsTrigger value="projects">Projects</TabsTrigger>
+            <TabsTrigger value="contact">Contact Form</TabsTrigger>
           </TabsList>
-          <TabsContent value="aboutme">
-            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "435px", display: "block", margin: "auto" }}>
-              <h1 style={{ width: "525px", margin: "0px auto", marginTop: "45px" }}>My name is Tiago. I was born in Chile and have lived there all my life, my journey to programming started in the year 2020 where the first language I learned was lua since then I&apos;ve been learning all sorts of technologies and I hope to keep learning more in the future.</h1>
-              <h1 style={{ width: "525px", margin: "25px auto" }}>Even though I&apos;m not a web developer, (and more likely engineer), I&apos;m still fascinated by the web development possibilities, good example of this is the website you are looking here which was totally designed and programmed by me.
-                <div style={{ height: "56px", marginTop: "45px", display: "flex" }}>
-                  <CircleFlagsCl style={{ width: "56px" }} className="defsvg"></CircleFlagsCl>
-                  <GameIconsSoccerBall style={{ width: "56px" }} className="defsvg"></GameIconsSoccerBall>
-                  <HeroiconsSolidHeart style={{ width: "56px" }} className="defsvg"></HeroiconsSolidHeart>
-                </div>
-              </h1>
+
+          <TabsContent value="projects">
+            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "390px", display: "block", margin: "auto" }}>
+
             </Card>
           </TabsContent>
-          <TabsContent value="contact">
-            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "435px", display: "block" }}>
-              <h1 style={{ fontSize: "24px", margin: "0px 20px", marginTop: "10px", textAlign: "center", color: "blanchedalmond" }}>Personal Email</h1>
-              <h2 style={{ textAlign: "center", fontSize: "24px", color: "crimson" }}>dev.dudubles@gmail.com</h2>
+
+          <TabsContent value="aboutme">
+            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "390px", display: "block", margin: "auto" }}>
             </Card>
+          </TabsContent>
+
+          <TabsContent value="contact">
+            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "390px", display: "block" }}>
+
+            </Card>
+
           </TabsContent>
         </Tabs>
 
