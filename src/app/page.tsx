@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <Card className="card-style" style={{ width: "75%", height: "95%", minWidth: "350px", maxWidth: "800px", minHeight: "860px" }}>
       <CardHeader style={{ height: "80px" }}>
-        <CardTitle>Duduble's Portfolio</CardTitle>
+        <CardTitle>Duduble&apos;s Portfolio</CardTitle>
         <CardDescription>Self-Taught Developer / Engineer</CardDescription>
       </CardHeader>
 
@@ -130,8 +130,8 @@ export default function Home() {
           </TabsList>
           <TabsContent value="aboutme">
             <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "435px", display: "block", margin: "auto" }}>
-              <h1 style={{ width: "525px", margin: "0px auto", marginTop: "45px" }}>My name is Tiago. I was born in Chile and have lived there all my life, my journey to programming started in the year 2020 where the first language I learned was lua since then I've been learning all sorts of technologies and I hope to keep learning more in the future.</h1>
-              <h1 style={{ width: "525px", margin: "25px auto" }}>Even though I'm not a web developer, (and more likely engineer), I'm still fascinated by the web development possibilities, good example of this is the website you are looking here which was totally designed and programmed by me.
+              <h1 style={{ width: "525px", margin: "0px auto", marginTop: "45px" }}>My name is Tiago. I was born in Chile and have lived there all my life, my journey to programming started in the year 2020 where the first language I learned was lua since then I&apos;ve been learning all sorts of technologies and I hope to keep learning more in the future.</h1>
+              <h1 style={{ width: "525px", margin: "25px auto" }}>Even though I&apos;m not a web developer, (and more likely engineer), I&apos;m still fascinated by the web development possibilities, good example of this is the website you are looking here which was totally designed and programmed by me.
                 <div style={{ height: "56px", marginTop: "45px", display: "flex" }}>
                   <CircleFlagsCl style={{ width: "56px" }} className="defsvg"></CircleFlagsCl>
                   <GameIconsSoccerBall style={{ width: "56px" }} className="defsvg"></GameIconsSoccerBall>
