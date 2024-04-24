@@ -1,0 +1,35 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #060606;
+}
+
+.card-style {
+  color: white;
+  background-color: #060606;
+  border-color: #3d3d3d;
+}
+
+.svg-btn {
+  background-color: #000000;
+  /* Black background */
+  color: #ffffff;
+  /* White text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  /* Remove underline for anchor tags */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.defsvg {
+  width: 100%;
+  height: 100%;
+}
