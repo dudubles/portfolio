@@ -35,15 +35,21 @@ import CibDiscord from "@/icons/CibDiscord";
 
 export default function Home() {
   return (
-    <Card className="card-style" style={{ width: "75%", minWidth: "350px", maxWidth: "615px", minHeight: "825px", maxHeight: "825px" }}>
+    <Card className="card-style" style={{ width: "75%", minWidth: "350px", maxWidth: "615px", minHeight: "825px", maxHeight: "825px", opacity: "0.87", marginTop: "5px" }}>
       <CardHeader style={{ height: "80px" }}>
-        <CardTitle>Duduble&apos;s Portfolio</CardTitle>
-        <CardDescription>Self-Taught Developer / Engineer</CardDescription>
+        <div style={{ display: "flex" }}>
+          <CardTitle style={{ color: "#29ffb7", fontWeight: "900" }}>Tiago Wilson</CardTitle>
+          <Avatar style={{ width: "28px", height: "28px", marginLeft: "15px" }}>
+            <AvatarImage src="https://avatars.githubusercontent.com/u/162647147" />
+            <AvatarFallback>TW</AvatarFallback>
+          </Avatar>
+        </div>
+        <CardDescription style={{ marginTop: "4px" }}>Self-Taught Developer / Engineer</CardDescription>
       </CardHeader>
 
       <CardContent>
 
-        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "blueviolet" }}>Skills</h3>
+        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "blueviolet", fontFamily: "CodeFont", textAlign: "center", fontSize: "14px" }}>Skills</h3>
         <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "48px", display: "flex" }}>
           <div style={{ height: "48px", margin: "auto", display: "flex" }}>
             <CibLua className="defsvg" style={{ width: "32px", height: "32px", background: "none", margin: "6px 10px" }} />
@@ -53,7 +59,7 @@ export default function Home() {
           </div>
         </Card>
 
-        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "brown" }}>Software</h3>
+        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "brown", fontFamily: "CodeFont", textAlign: "center", fontSize: "14px" }}>Software</h3>
         <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "48px", display: "flex" }}>
           <div style={{ height: "48px", margin: "auto", display: "flex" }}>
 
@@ -100,7 +106,8 @@ export default function Home() {
           </div>
         </Card>
 
-        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "darkcyan" }}>Social Media</h3>
+        <h3 style={{ margin: "10px 0px", color: "white", backgroundColor: "darkcyan", fontFamily: "CodeFont", textAlign: "center", fontSize: "14px" }}>Social</h3>
+
         <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "48px", display: "flex" }}>
           <div style={{ height: "48px", margin: "auto", display: "flex" }}>
 
@@ -118,9 +125,9 @@ export default function Home() {
           </div>
         </Card>
 
-        <Tabs defaultValue="projects" style={{ height: "450px", marginTop: "10px" }}>
+        <Tabs defaultValue="aboutme" style={{ height: "450px", marginTop: "10px" }}>
           <TabsList style={{ backgroundColor: "#1a1a1a", color: "white" }}>
-            <TabsTrigger value="projects">Projects</TabsTrigger>
+            <TabsTrigger value="aboutme">About Me</TabsTrigger>
             <TabsTrigger value="contact">Contact Form</TabsTrigger>
           </TabsList>
 

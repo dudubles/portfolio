@@ -1,3 +1,9 @@
+@font-face {
+  font-family: CodeFont;
+  src: url("../../public/fonts/Code 7x5.ttf");
+  font-weight: 100;
+}
+
 body {
   display: grid;
   place-items: center;
