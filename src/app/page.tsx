@@ -1,5 +1,9 @@
 import Image from "next/image";
 import "./main.css"
+import "@/myconf"
+
+import { cn } from "@/lib/utils";
+import { CardStack } from "@/components/ui/card-stack";
 
 import SvgCButton from "@/components/svgcbutton";
 import {
@@ -32,10 +36,11 @@ import CibMozillaFirefox from "@/icons/CibMozillaFirefox";
 import CibGithub from "@/icons/CibGithub";
 import CibGitlab from "@/icons/CibGitlab";
 import CibDiscord from "@/icons/CibDiscord";
+import { PROJECTS } from "@/myconf";
 
 export default function Home() {
   return (
-    <Card className="card-style" style={{ width: "75%", minWidth: "350px", maxWidth: "615px", minHeight: "825px", maxHeight: "825px", opacity: "0.87", marginTop: "5px" }}>
+    <Card className="card-style" style={{ width: "75%", minWidth: "350px", maxWidth: "530px", minHeight: "780px", maxHeight: "780px", marginTop: "5px" }}>
       <CardHeader style={{ height: "80px" }}>
         <div style={{ display: "flex" }}>
           <CardTitle style={{ color: "#29ffb7", fontWeight: "900" }}>Tiago Wilson</CardTitle>
@@ -125,25 +130,28 @@ export default function Home() {
           </div>
         </Card>
 
-        <Tabs defaultValue="aboutme" style={{ height: "450px", marginTop: "10px" }}>
+        <Tabs defaultValue="projects" style={{ height: "380px", marginTop: "10px" }}>
           <TabsList style={{ backgroundColor: "#1a1a1a", color: "white" }}>
-            <TabsTrigger value="aboutme">About Me</TabsTrigger>
+            <TabsTrigger value="projects">Projects</TabsTrigger>
             <TabsTrigger value="contact">Contact Form</TabsTrigger>
           </TabsList>
 
           <TabsContent value="projects">
-            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "390px", display: "block", margin: "auto" }}>
-
+            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "350px", display: "block", margin: "auto" }}>
+              <div style={{ margin: "45px auto" }}>
+                <CardStack items={PROJECTS}></CardStack>
+              </div>
             </Card>
           </TabsContent>
 
           <TabsContent value="aboutme">
-            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "390px", display: "block", margin: "auto" }}>
+            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "350px", display: "block", margin: "auto" }}>
+              <Card className="card-style "></Card>
             </Card>
           </TabsContent>
 
           <TabsContent value="contact">
-            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "390px", display: "block" }}>
+            <Card className="card-style" style={{ backgroundColor: "#1a1a1a", height: "350px", display: "block" }}>
 
             </Card>
 
