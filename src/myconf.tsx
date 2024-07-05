@@ -12,4 +12,15 @@ export const PROJECTS = [
 
     ),
   },
+  {
+    id: 1,
+    name: "Kraine Engine",
+    projurl: "https://github.com/dudubles/kraine",
+    content: (
+      <p>
+        Game engine im currently working wich will
+        implement lua for scripting.
+      </p>
+    ),
+  },
 ]
