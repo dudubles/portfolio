@@ -43,7 +43,7 @@ export default function Home() {
     <Card className="card-style" style={{ width: "75%", minWidth: "350px", maxWidth: "530px", minHeight: "780px", maxHeight: "780px", marginTop: "5px" }}>
       <CardHeader style={{ height: "80px" }}>
         <div style={{ display: "flex" }}>
-          <CardTitle style={{ color: "#29ffb7", fontWeight: "900" }}>Tiago Wilson</CardTitle>
+          <CardTitle style={{ color: "#29ffb7", fontWeight: "900" }}>@Dudubles</CardTitle>
           <Avatar style={{ width: "28px", height: "28px", marginLeft: "15px" }}>
             <AvatarImage src="https://avatars.githubusercontent.com/u/162647147" />
             <AvatarFallback>TW</AvatarFallback>
